@@ -1,5 +1,5 @@
 .bg-image {
-    background-image: url(imagens/logo.png);
+    background-image: url(logo.png);
     background-repeat: no-repeat;
     background-position: right;
     transition: 2000ms; 
