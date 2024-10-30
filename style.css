@@ -1,0 +1,51 @@
+.bg-image {
+    background-image: url(imagens/logo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: 2000ms; 
+    background-color: rgb(238, 255, 235);
+}
+
+.map {
+    width: 400px;
+    height: 400px;
+}
+
+/* Media query para telas menores que 1250px */
+@media (max-width: 1250px) {
+    .bg-image {
+        background-image: none;
+    }
+}
+
+.card {
+    height: 100%; /* Define o mesmo tamanho para todos os cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer {
+    margin-top: auto; /* Empurra o rodapé para o final do card */
+}
+
+.card-title i {
+    color: #007bff; /* Cor do ícone no título */
+}
+
+.list-group-item i {
+    color: #28a745; /* Cor dos ícones nas listas */
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bg-section {
+    background-color: whitesmoke
+}
+
+.bg-call {
+    background-color: rgb(196, 255, 185);;
+}
