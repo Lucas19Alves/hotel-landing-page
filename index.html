@@ -11,23 +11,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Hotel e Restaurante Minas Bahia em Mortugaba - BA. Quartos confortáveis, ótima localização e preços acessíveis. Reserve agora!">
+    <meta name="keywords" content="hotel mortugaba, hotel minas bahia, hospedagem mortugaba, restaurante mortugaba">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-    <header class="p-5 bg-image">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Hotel e Restaurante Minas Bahia</h1>
-            <p class="col-md-8 display-5">Cada cliente um amigo</p>
-            <p class="fs-4">Entre em contato:</p>
-            <a class="btn btn-success btn-lg" href="https://wa.me/77992067598" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a class="btn btn-primary btn-lg" href="tel:+5577992067598">
-                <i class="fa fa-phone"></i>
-            </a>
-            <a class="btn btn-warning btn-lg" href="mailto:hotelminasbahia@hotmail.com">
-                <i class="fa fa-envelope text-white"></i>
-            </a>
+    <header class="p-5 bg-image position-relative">
+        <div class="bg-dark bg-opacity-50 position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container-fluid py-5 position-relative">
+            <h1 class="display-4 fw-bold text-white">Hotel e Restaurante Minas Bahia</h1>
+            <p class="col-md-8 display-6 text-white">Cada cliente um amigo</p>
+            <div class="mt-4">
+                <p class="fs-4 text-white mb-3">Entre em contato:</p>
+                <a class="btn btn-success btn-lg me-2 shadow-sm" href="https://wa.me/77992067598" target="_blank">
+                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                </a>
+                <a class="btn btn-primary btn-lg" href="tel:+5577992067598">
+                    <i class="fa fa-phone"></i>
+                </a>
+                <a class="btn btn-warning btn-lg" href="mailto:hotelminasbahia@hotmail.com">
+                    <i class="fa fa-envelope text-white"></i>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -38,15 +44,21 @@
             <p class="fs-4">A sua casa em Mortugaba! Aproveite nosso ambiente aconchegante e nossos serviços de
                 qualidade.</p>
             <h2 class="text-center fw-bold pt-5">Galeria</h2>
-            <div class="row">
-                <div class="col-md-4 my-3">
-                    <img src="recepcao.jpg" class="img-fluid rounded shadow" alt="Área Externa">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="position-relative overflow-hidden">
+                        <img src="recepcao.jpg" class="img-fluid rounded shadow transition-zoom" alt="Recepção">
+                    </div>
                 </div>
-                <div class="col-md-4 my-3">
-                    <img src="quarto.jpg" class="img-fluid rounded shadow" alt="Quarto Standard">
+                <div class="col-md-4">
+                    <div class="position-relative overflow-hidden">
+                        <img src="quarto.jpg" class="img-fluid rounded shadow transition-zoom" alt="Quarto">
+                    </div>
                 </div>
-                <div class="col-md-4 my-3">
-                    <img src="banheiro.jpg" class="img-fluid rounded shadow" alt="Quarto Luxo">
+                <div class="col-md-4">
+                    <div class="position-relative overflow-hidden">
+                        <img src="banheiro.jpg" class="img-fluid rounded shadow transition-zoom" alt="Banheiro">
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,7 +66,12 @@
         <!-- Avaliações -->
         <section class="m-5 bg-white p-5 rounded">
             <h2 class="text-center fw-bold">O que nossos clientes dizem</h2>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active text-center">
                         <p class="fs-4">"Excelente atendimento e quartos confortáveis!"</p>
@@ -104,7 +121,7 @@
             <div class="row text-center">
                 <!-- Quarto Simples -->
                 <div class="col-md-4">
-                    <div class="card shadow mb-4 h-100">
+                    <div class="card shadow mb-4 h-100 transition-transform">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <i class="fas fa-bed me-2"></i>Quarto Simples
@@ -119,14 +136,17 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <h3 class="fw-bold">R$40,00</h3>
+                            <h3 class="fw-bold mb-2">R$40,00</h3>
+                            <a href="https://wa.me/77992067598" class="btn btn-success w-100">
+                                <i class="fab fa-whatsapp me-2"></i>Reservar Agora
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Quarto Comum -->
                 <div class="col-md-4">
-                    <div class="card shadow mb-4 h-100">
+                    <div class="card shadow mb-4 h-100 transition-transform">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <i class="fas fa-bed me-2"></i>Quarto Comum
@@ -142,14 +162,17 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <h3 class="fw-bold">R$70,00</h3>
+                            <h3 class="fw-bold mb-2">R$70,00</h3>
+                            <a href="https://wa.me/77992067598" class="btn btn-success w-100">
+                                <i class="fab fa-whatsapp me-2"></i>Reservar Agora
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Quarto Completo -->
                 <div class="col-md-4">
-                    <div class="card shadow mb-4 h-100">
+                    <div class="card shadow mb-4 h-100 transition-transform">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <i class="fas fa-bed me-2"></i>Quarto Completo
@@ -166,7 +189,10 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <h3 class="fw-bold">R$90,00</h3>
+                            <h3 class="fw-bold mb-2">R$90,00</h3>
+                            <a href="https://wa.me/77992067598" class="btn btn-success w-100">
+                                <i class="fab fa-whatsapp me-2"></i>Reservar Agora
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +225,7 @@
     <footer class="bg-dark text-light py-4">
         <div class="container text-center">
             <p>© 2024 Hotel Minas Bahia - Todos os Direitos Reservados</p>
-            <a href="https://www.sunshinesolutions.com.br/" class="mb-0">Sunshine Solutions</a>
+            <a href="https:lucas19alves.github.io" class="mb-0" target="_blank">Desenvolvido por Lucas Alves</a>
         </div>
     </footer>
 

@@ -1,51 +1,147 @@
+/* Estilos Gerais */
+:root {
+    --primary-color: #007bff;
+    --success-color: #28a745;
+    --bg-light: rgb(238, 255, 235);
+    --bg-call: rgb(196, 255, 185);
+}
+
+/* Header e Background */
 .bg-image {
     background-image: url(logo.png);
     background-repeat: no-repeat;
     background-position: right;
-    transition: 2000ms; 
-    background-color: rgb(238, 255, 235);
+    background-color: var(--bg-light);
+    padding: 4rem 0;
+    position: relative;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
-.map {
-    width: 400px;
-    height: 400px;
-}
-
-/* Media query para telas menores que 1250px */
+/* Media query ajustada */
 @media (max-width: 1250px) {
     .bg-image {
         background-image: none;
+        padding: 2rem 0;
     }
 }
 
+/* Cards */
 .card {
-    height: 100%; /* Define o mesmo tamanho para todos os cards */
+    height: 100%;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem;
 }
 
 .card-footer {
-    margin-top: auto; /* Empurra o rodapé para o final do card */
+    margin-top: auto;
+    background-color: transparent;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 1rem;
 }
 
+/* Ícones */
 .card-title i {
-    color: #007bff; /* Cor do ícone no título */
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-title i {
+    transform: scale(1.1);
 }
 
 .list-group-item i {
-    color: #28a745; /* Cor dos ícones nas listas */
+    color: var(--success-color);
     margin-right: 10px;
+    transition: transform 0.3s ease;
 }
 
+.list-group-item:hover i {
+    transform: translateX(5px);
+}
+
+/* Links */
 a {
     text-decoration: none;
     color: white;
+    transition: all 0.3s ease;
 }
 
+a:hover {
+    opacity: 0.9;
+}
+
+/* Seções */
 .bg-section {
-    background-color: whitesmoke
+    background-color: #f8f9fa;
+    padding: 2rem 0;
 }
 
 .bg-call {
-    background-color: rgb(196, 255, 185);;
+    background: linear-gradient(135deg, var(--bg-call) 0%, var(--bg-light) 100%);
+    padding: 3rem 0;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+/* Imagens e Mapa */
+.map {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+img.img-fluid {
+    transition: transform 0.3s ease;
+}
+
+img.img-fluid:hover {
+    transform: scale(1.02);
+}
+
+/* Botões */
+.btn {
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0.8rem 1.5rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Lista de Grupos */
+.list-group-item {
+    border: none;
+    padding: 0.8rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bg-image {
+        text-align: center;
+    }
+    
+    .card {
+        margin-bottom: 1.5rem;
+    }
 }
